@@ -1,0 +1,20 @@
+// {
+//   "files": [],
+//   "references": [
+//     { "path": "./tsconfig.app.json" },
+//     { "path": "./tsconfig.node.json" }
+//   ]
+  
+// }
+{
+  "compilerOptions": {
+    "esModuleInterop": true,
+    "skipLibCheck": true,  // Optional but can help avoid other type issues
+    "jsx": "react"  ,// Or "react-jsx" if you're using React 17+
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"]
+    }
+  },
+  "include": ["src"]
+}
